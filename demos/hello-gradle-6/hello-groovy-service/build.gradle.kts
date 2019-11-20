@@ -3,10 +3,6 @@ plugins {
     groovy
 }
 
-tasks.withType<GroovyCompile> {
-    options.isIncremental = true
-}
-
 dependencies {
     implementation("org.codehaus.groovy:groovy-all:3.0.0-rc-1")
 

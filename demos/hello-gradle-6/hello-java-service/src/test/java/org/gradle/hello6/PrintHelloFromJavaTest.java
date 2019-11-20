@@ -1,8 +1,6 @@
 package org.gradle.hello6;
 
 import org.junit.jupiter.api.Test;
-
-import static org.gradle.hello6.HelloMessageFixture.sampleMessage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PrintHelloFromJavaTest {
@@ -13,5 +11,9 @@ class PrintHelloFromJavaTest {
         Hello Webinar audience from Java 13
             and Gradle 6!""",
             classUnderTest.print(sampleMessage()));
+    }
+
+    private HelloMessage sampleMessage() {
+        return new HelloMessage("Hello Webinar audience");
     }
 }
